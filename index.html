@@ -6,44 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Javascript Quiz</title>
 </head>
 
 <body>
   <!-- header -->
-  <header>
-    <div class="quiz-intro">
+    <div id="nav">
 
-      <h1 id="intro-head">Javascript Code Quiz!</h1>
-      <p>Try to answer the following Javascript questions correctly. Your score will be recorded with your initials. Please click the start button to begin!<br> Good luck!</p>
+      <!-- view scores link on the top left of nav bar-->
+      <div class="left">
+        <a onclick="getScore()" href="#">
+          <h4>View Highscore</h4>
+        </a>
+      </div>
 
-      <button id="start-button">Start Quiz</button>
+      <!-- countdown timer on the top right of nav bar-->
+      <div class="right">
+        <h4>Time: <span id="timeLeft">0</span></h4>
+      </div>
     </div>
-  </header>
 
-<main>
-  <!-- container for questions -->
-<div class="quiz-questions">
+    <!--main body of quiz-->
+    <div id="quiz">
 
-</div>
+      <div id="quizBody">
 
-<div class="quiz-results">
+        <h1>
+          JavaScript Quiz!
+        </h1>
 
-</div>
+        <h3>
+          You will have 80 seconds to complete this quiz.
+          <br>
+          For each wrong answer, you will lose 10 seconds to your timer. For each right answer, you will add 15 seconds. 
+          <br>
+          You can record your score at the end of your quiz. 
+          <br>
+          Good luck!
+        </h3>
 
-<div class="high-score">
+        <button onclick="start()">Start!</button>
 
-</div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/style.js"></script>
 
-</main>
-
-
-
-
-
-
-
-
-  <script src="js/style.js"></script>
-</body>
 </html>
