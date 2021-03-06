@@ -5,7 +5,7 @@ var questions = [{
         answer: "Both"
     },
     {
-        title: "Which are the correct if statements to execute certain code if “x” is equal to 10?",
+        title: "Which are the correct 'if' statements to execute certain code if “x” is equal to 10?",
         choices: ["if(x 10)", "if(x = 10)", "if(x == 10)", "if(x != 10)"],
         answer: "if(x == 10)"
     },
@@ -59,7 +59,7 @@ function endGame() {
     <h2>Game over!</h2>
     <h3>You got a ` + score +  ` /100!</h3>
     <h3>That means you got ` + score / 20 +  ` questions correct!</h3>
-    <input type="text" id="name" placeholder="First name"> 
+    <input type="text" id="name" placeholder="Type Initials"> 
     <button onclick="setScore()">Set score!</button>`;
 
     document.getElementById("quizBody").innerHTML = quizContent;
