@@ -18,6 +18,7 @@ THEN I can save my initials and my score
 
 ## Screenshot
 
+<img src="assets/images/Screen Shot 2021-03-05 at 10.46.03 PM.png">
 
 ```
 
