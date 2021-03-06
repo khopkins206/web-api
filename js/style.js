@@ -5,7 +5,7 @@ var questions = [{
         answer: "Both"
     },
     {
-        title: "Which are the correct "if" statements to execute certain code if “x” is equal to 10?",
+        title: "Which are the correct if statements to execute certain code if “x” is equal to 10?",
         choices: ["if(x 10)", "if(x = 10)", "if(x == 10)", "if(x != 10)"],
         answer: "if(x == 10)"
     },
@@ -35,7 +35,7 @@ var timer;
 //starts the countdown timer once user clicks the 'start' button
 function start() {
 
-    timeLeft = 75;
+    timeLeft = 60;
     document.getElementById("timeLeft").innerHTML = timeLeft;
 
     timer = setInterval(function() {
